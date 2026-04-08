@@ -1,0 +1,4 @@
+header[data-testid="stHeader"] {
+    background-color: transparent !important;
+    height: 0px !important;
+}
