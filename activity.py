@@ -38,7 +38,7 @@ with tab3:
     st.markdown(r"##### i) At least one integer is even.")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$\implies \exists x [q(x)]$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
 
     st.divider()
 
@@ -65,7 +65,7 @@ with tab3:
     st.markdown(r"##### iv) No even integer is divisible by 7.")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$\neg \exists x [q(x) \land t(x)]$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$\equiv \forall x \neg [q(x) \land t(x)]$")
@@ -101,7 +101,7 @@ with tab2:
     st.markdown(r"##### a) $\exists x \exists y [xy = 1]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 1, y = 1$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$xy = 1(1) = 1$")
@@ -124,11 +124,11 @@ with tab2:
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $y = 1 \implies x(1) = 1 \implies x = 1$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $y = 2 \implies x(2) = 1$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Substitute $x = 1 \implies 1(2) = 1 \implies 2 = 1 \equiv \text{F}$")
@@ -143,7 +143,7 @@ with tab2:
     st.markdown(r"##### c) $\forall x \exists y [xy = 1]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 2$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$xy = 1 \implies 2y = 1 \implies y = 0.5$")
@@ -162,7 +162,7 @@ with tab2:
     st.markdown(r"##### d) $\exists x \exists y [(2x + y = 5) \land (x - 3y = -8)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$2x + y = 5 \implies y = 5 - 2x$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$x - 3y = -8$")
@@ -193,7 +193,7 @@ with tab2:
     st.markdown(r"##### e) $\exists x \exists y [(3x - y = 7) \land (2x + 4y = 3)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$3x - y = 7 \implies y = 3x - 7$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$2x + 4y = 3$")
@@ -217,8 +217,14 @@ with tab2:
 
 
 with tab1:
-    st.markdown(r"### Question 12")
-    st.markdown(r"**Find the truth value of the following open statements:**")
+    st.markdown(r"##### **Q 12. Consider the following open statements on the set of all real numbers as universe:**")
+    st.markdown(r"""
+    * $p(x) : x \ge 0$
+    * $q(x) : x^2 \ge 0$
+    * $r(x) : x^2 - 3x - 4 = 0 $
+    * $s(x) : x^2 - 3 > 0 $
+    """)
+    st.divider()
     st.markdown(r"**Universe:** Set of all real numbers ($\mathbb{R}$)")
     st.markdown(r"""
     * $p(x) : x \ge 0$
@@ -232,13 +238,14 @@ with tab1:
         * $x^2 > 3$
         * $\implies x > \sqrt{3}, x < -\sqrt{3}$
     """)
-    
+    st.markdown(r"**Find the truth value of:**")
+
     st.divider()
-    
+
     st.markdown(r"##### 1. $\exists x [p(x) \land q(x)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 1$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$p(1): 1 \ge 0 \equiv \text{T}$")
@@ -261,7 +268,7 @@ with tab1:
     st.markdown(r"##### 2. $\forall x [p(x) \implies q(x)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = c$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Case 1: $c \ge 0 \implies p(c) \equiv \text{T}$")
@@ -304,7 +311,7 @@ with tab1:
     st.markdown(r"##### 3. $\forall x [q(x) \implies s(x)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 1$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$q(1): 1^2 \ge 0 \equiv \text{T}$")
@@ -333,7 +340,7 @@ with tab1:
     st.markdown(r"##### 4. $\forall x [r(x) \lor s(x)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 0$")
-    c2.markdown(r"Rules of inference")
+    c2.markdown(r"")
     
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"$r(0): 0^2 - 3(0) - 4 = 0 \implies -4 = 0 \equiv \text{F}$")

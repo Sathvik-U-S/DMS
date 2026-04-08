@@ -2,3 +2,7 @@ header[data-testid="stHeader"] {
     background-color: transparent !important;
     height: 0px !important;
 }
+.block-container {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2rem !important;
+}
