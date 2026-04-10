@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. Set page config
-st.set_page_config(page_title="Discrete Math Solutions", layout="wide")
+st.set_page_config(page_title="Discrete Math Solutions")
 
 # 2. Import styles.css using st.html
 def local_css(file_name):
