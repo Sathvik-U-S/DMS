@@ -206,15 +206,24 @@ with tab_12:
     st.divider()
 
     st.markdown(r"##### **2. $\forall x [p(x) \rightarrow q(x)]$**")
-    st.markdown(r"**Data Given:**")
-    st.markdown(r"&emsp;&emsp; Universe: Set of all real numbers ($\mathbb{R}$)")
-    st.markdown(r"&emsp;&emsp; $p(x) : x \ge 0$")
-    st.markdown(r"&emsp;&emsp; $q(x) : x^2 \ge 0$")
-    st.markdown(r"**Derivation:**")
-    st.markdown(r"Let $x = c$ (any real number)")
-    st.markdown(r"Case 1: $x \ge 0 \implies \text{True} \rightarrow \text{True} \equiv \text{True}$")
-    st.markdown(r"Case 2: $x < 0 \implies \text{False} \rightarrow \text{True} \equiv \text{True}$")
-    st.markdown(r"**Result:** **True**")
+    c1, c2 = st.columns([2, 1])
+    c1.markdown(r"**Data Given:**")
+    c1.markdown(r"&emsp;&emsp; Universe: Set of all real numbers ($\mathbb{R}$)")
+    c1.markdown(r"&emsp;&emsp; $p(x) : x \ge 0$")
+    c1.markdown(r"&emsp;&emsp; $q(x) : x^2 \ge 0$")
+    c1.markdown(r"**Derivation:**")
+    c1.markdown(r"Step 1: Note that the square of any real number is always non-negative ($x^2 \ge 0$).")
+    c1.markdown(r"&emsp;&emsp; Therefore, $q(x)$ is **True** for all $x \in \mathbb{R}$.")
+    c1.markdown(r"Step 2: Substitute this into the implication.")
+    c1.markdown(r"&emsp;&emsp; $p(x) \rightarrow \text{True}$")
+    c1.markdown(r"Step 3: Analyze both possible cases for $p(x)$.")
+    c1.markdown(r"&emsp;&emsp; Case 1 ($x \ge 0$): $p(x)$ is True $\implies \text{True} \rightarrow \text{True} \equiv \text{True}$")
+    c1.markdown(r"&emsp;&emsp; Case 2 ($x < 0$): $p(x)$ is False $\implies \text{False} \rightarrow \text{True} \equiv \text{True}$")
+    c1.markdown(r"**Result:** **True**")
+    c2.markdown(r"**Rule:**")
+    c2.markdown(r"**Truth Table for Implication**")
+    c2.markdown(r"&emsp; $\text{T} \rightarrow \text{T} \equiv \text{T}$")
+    c2.markdown(r"&emsp; $\text{F} \rightarrow \text{T} \equiv \text{T}$")
 
     st.divider()
 
@@ -231,6 +240,7 @@ with tab_12:
     st.markdown(r"**Result:** **False**")
 
     st.divider()
+    
 
     st.markdown(r"##### **4. $\forall x [r(x) \lor s(x)]$**")
     c1, c2 = st.columns([2, 1])
