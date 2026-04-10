@@ -25,8 +25,7 @@ with tab_intro:
 
 with tab_3:
     st.markdown(r"### **Question 3**")
-    st.markdown(r"**For the universe of all integers, let p(x), q(x), r(x), s(x) and t(x) denote the following open statements:**")
-    st.markdown(r"**Write the following statements in symbolic form:**")
+    st.markdown(r"**For the universe of all integers, let p(x), q(x), r(x), s(x) and t(x) denote the following open statements: p(x): x>0, q(x): x is even, r(x): x is a perfect square, s(x): x is divisible by 3, t(x): x is divisible by 7. Write the following statements in symbolic form: i) At least one integer is even. ii) There exists a positive integer that is even. iii) If x is even, then x is not divisible by 3. iv) No even integer is divisible by 7. v) There exists even integer divisible by 3.**")
     
     st.divider()
 
@@ -112,6 +111,7 @@ with tab_3:
 with tab_8:
     st.markdown(r"### **Question 8**")
     st.markdown(r"**For the following statements, the universe comprises all non-zero integers. Determine the truth value of each statement.**")
+    st.markdown(r"**a) $\exists x \exists y [xy = 1]$  b) $\exists x \forall y [xy = 1]$  c) $\forall x \exists y [xy = 1]$  d) $\exists x \exists y [(2x + y = 5) \land (x - 3y = -8)]$  e) $\exists x \exists y [(3x - y = 7) \land (2x + 4y = 3)]$**")
     st.markdown(r"**Universe:** All non-zero integers ($\mathbb{Z}^*$)")
 
     st.divider()
@@ -164,14 +164,12 @@ with tab_8:
 with tab_12:
     st.markdown(r"### **Question 12**")
     st.markdown(r"**Consider the following open statements on the set of all real numbers as universe:**")
+    st.markdown(r"**$p(x) : x \ge 0$**")
+    st.markdown(r"**$q(x) : x^2 \ge 0$**")
+    st.markdown(r"**$r(x) : x^2 - 3x - 4 = 0$**")
+    st.markdown(r"**$s(x) : x^2 - 3 > 0$**")
+    st.markdown(r"**Then find the truth value of: 1. $\exists x [p(x) \land q(x)]$ 2. $\forall x [p(x) \rightarrow q(x)]$ 3. $\forall x [q(x) \rightarrow s(x)]$ 4. $\forall x [r(x) \lor s(x)]$**")
     st.markdown(r"**Universe:** Set of all real numbers ($\mathbb{R}$)")
-    st.markdown(r"**Premises:**")
-    st.markdown(r"""
-    &emsp;&emsp; $p(x) : x \ge 0$  
-    &emsp;&emsp; $q(x) : x^2 \ge 0$  
-    &emsp;&emsp; $r(x) : x^2 - 3x - 4 = 0$  
-    &emsp;&emsp; $s(x) : x^2 - 3 > 0$  
-    """)
 
     st.divider()
 
