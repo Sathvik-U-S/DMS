@@ -27,28 +27,29 @@ with tab_3:
     st.markdown(r"### **Question 3**")
     st.markdown(r"**For the universe of all integers, let p(x), q(x), r(x), s(x) and t(x) denote the following open statements:**")
     st.markdown(r"**Write the following statements in symbolic form:**")
-    st.markdown(r"**Universe:** All integers ($\mathbb{Z}$)")
-    st.markdown(r"**Premises:**")
-    st.markdown(r"""
-    &emsp;&emsp; $p(x): x > 0$  
-    &emsp;&emsp; $q(x): x \text{ is even}$  
-    &emsp;&emsp; $r(x): x \text{ is a perfect square}$  
-    &emsp;&emsp; $s(x): x \text{ is divisible by 3}$  
-    &emsp;&emsp; $t(x): x \text{ is divisible by 7}$  
-    """)
-
+    
     st.divider()
 
     st.markdown(r"##### **i) At least one integer is even.**")
-    st.markdown(r"The phrase 'at least one' translates to the existential quantifier.")
+    st.markdown(r"**Data Given:**")
+    st.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
+    st.markdown(r"&emsp;&emsp; $q(x): x \text{ is even}$")
+    st.markdown(r"**Explanation:** The phrase 'at least one' translates to the existential quantifier.")
+    st.markdown(r"**Symbolic Form:**")
     st.markdown(r"&emsp;&emsp; $\exists x [q(x)]$")
 
     st.divider()
 
     st.markdown(r"##### **ii) There exists a positive integer that is even.**")
     c1, c2 = st.columns([2, 1])
-    c1.markdown(r"We use the existential quantifier for 'there exists' and conjunction to join the two properties.")
+    c1.markdown(r"**Data Given:**")
+    c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
+    c1.markdown(r"&emsp;&emsp; $p(x): x > 0$")
+    c1.markdown(r"&emsp;&emsp; $q(x): x \text{ is even}$")
+    c1.markdown(r"**Explanation:** Use the existential quantifier and conjunction.")
+    c1.markdown(r"**Symbolic Form:**")
     c1.markdown(r"&emsp;&emsp; $\exists x [p(x) \land q(x)]$")
+    
     c2.markdown(r"**Rule:**")
     c2.markdown(r"Conjunction")
     c2.markdown(r"&emsp; $p, q \therefore p \land q$")
@@ -57,8 +58,14 @@ with tab_3:
 
     st.markdown(r"##### **iii) If x is even, then x is not divisible by 3.**")
     c1, c2 = st.columns([2, 1])
-    c1.markdown(r"The 'If... then' structure translates to an implication. Since this rule applies to any integer, we use the universal quantifier.")
+    c1.markdown(r"**Data Given:**")
+    c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
+    c1.markdown(r"&emsp;&emsp; $q(x): x \text{ is even}$")
+    c1.markdown(r"&emsp;&emsp; $s(x): x \text{ is divisible by 3}$")
+    c1.markdown(r"**Explanation:** 'If... then' translates to an implication bounded by a universal quantifier.")
+    c1.markdown(r"**Symbolic Form:**")
     c1.markdown(r"&emsp;&emsp; $\forall x [q(x) \rightarrow \neg s(x)]$")
+    
     c2.markdown(r"**Rule:**")
     c2.markdown(r"Law of Implication")
     c2.markdown(r"&emsp; $p \rightarrow q \equiv \neg p \lor q$")
@@ -67,7 +74,12 @@ with tab_3:
 
     st.markdown(r"##### **iv) No even integer is divisible by 7.**")
     c1, c2 = st.columns([2, 1])
-    c1.markdown(r"Write it as 'It is false that there exists an even integer divisible by 7', then simplify.")
+    c1.markdown(r"**Data Given:**")
+    c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
+    c1.markdown(r"&emsp;&emsp; $q(x): x \text{ is even}$")
+    c1.markdown(r"&emsp;&emsp; $t(x): x \text{ is divisible by 7}$")
+    c1.markdown(r"**Explanation:** Negate the existence of an integer that is both even and divisible by 7, then simplify.")
+    c1.markdown(r"**Derivation:**")
     c1.markdown(r"&emsp;&emsp; $\neg \exists x [q(x) \land t(x)]$")
     c1.markdown(r"&emsp;&emsp; $\equiv \forall x \neg [q(x) \land t(x)]$")
     c1.markdown(r"&emsp;&emsp; $\equiv \forall x [\neg q(x) \lor \neg t(x)]$")
@@ -85,8 +97,14 @@ with tab_3:
 
     st.markdown(r"##### **v) There exists even integer divisible by 3.**")
     c1, c2 = st.columns([2, 1])
-    c1.markdown(r"We combine the properties with conjunction and use the existential quantifier.")
+    c1.markdown(r"**Data Given:**")
+    c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
+    c1.markdown(r"&emsp;&emsp; $q(x): x \text{ is even}$")
+    c1.markdown(r"&emsp;&emsp; $s(x): x \text{ is divisible by 3}$")
+    c1.markdown(r"**Explanation:** Combine the properties with conjunction and use the existential quantifier.")
+    c1.markdown(r"**Symbolic Form:**")
     c1.markdown(r"&emsp;&emsp; $\exists x [q(x) \land s(x)]$")
+    
     c2.markdown(r"**Rule:**")
     c2.markdown(r"Conjunction")
     c2.markdown(r"&emsp; $p, q \therefore p \land q$")
