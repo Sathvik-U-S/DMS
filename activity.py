@@ -242,6 +242,8 @@ with tab_12:
     st.divider()
     
 
+    st.divider()
+
     st.markdown(r"##### **4. $\forall x [r(x) \lor s(x)]$**")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"**Data Given:**")
@@ -249,8 +251,13 @@ with tab_12:
     c1.markdown(r"&emsp;&emsp; $r(x) : x^2 - 3x - 4 = 0$")
     c1.markdown(r"&emsp;&emsp; $s(x) : x^2 - 3 > 0$")
     c1.markdown(r"**Derivation:**")
-    c1.markdown(r"Let $x = 0$")
-    c1.markdown(r"&emsp;&emsp; $r(0): \text{False}, s(0): \text{False}$")
+    c1.markdown(r"Step 1: The statement claims that for *every* real number, either $r(x)$ or $s(x)$ is true.")
+    c1.markdown(r"Step 2: To disprove this universal claim, we only need one counterexample where both fail.")
+    c1.markdown(r"Step 3: Let's test the value $x = 0$.")
+    c1.markdown(r"&emsp;&emsp; Evaluate $r(0): 0^2 - 3(0) - 4 = -4 \neq 0 \implies \text{False}$")
+    c1.markdown(r"&emsp;&emsp; Evaluate $s(0): 0^2 - 3 = -3 \ngtr 0 \implies \text{False}$")
+    c1.markdown(r"Step 4: Substitute the truth values into the disjunction.")
+    c1.markdown(r"&emsp;&emsp; $\text{False} \lor \text{False} \equiv \text{False}$")
     c1.markdown(r"**Result:** **False**")
     c2.markdown(r"**Rule:**")
     c2.markdown(r"**Idempotent Law**")
