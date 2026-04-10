@@ -25,11 +25,22 @@ with tab_intro:
 
 with tab_3:
     st.markdown(r"### **Question 3**")
-    st.markdown(r"**For the universe of all integers, let p(x), q(x), r(x), s(x) and t(x) denote the following open statements: p(x): x>0, q(x): x is even, r(x): x is a perfect square, s(x): x is divisible by 3, t(x): x is divisible by 7. Write the following statements in symbolic form: i) At least one integer is even. ii) There exists a positive integer that is even. iii) If x is even, then x is not divisible by 3. iv) No even integer is divisible by 7. v) There exists even integer divisible by 3.**")
+    st.markdown(r"For the universe of all integers, let p(x), q(x), r(x), s(x) and t(x) denote the following open statements: ")
+    st.markdown(r"p(x): x>0, ")
+    st.markdown(r"q(x): x is even, ")
+    st.markdown(r"r(x): x is a perfect square, ")
+    st.markdown(r"s(x): x is divisible by 3, ")
+    st.markdown(r"t(x): x is divisible by 7. ")
+    st.markdown(r"Write the following statements in symbolic form: ")
+    st.markdown(r"i) At least one integer is even. ")
+    st.markdown(r"ii) There exists a positive integer that is even. ")
+    st.markdown(r"iii) If x is even, then x is not divisible by 3. ")
+    st.markdown(r"iv) No even integer is divisible by 7. ")
+    st.markdown(r"v) There exists even integer divisible by 3.")
     
     st.divider()
 
-    st.markdown(r"##### **i) At least one integer is even.**")
+    st.markdown(r"##### i) At least one integer is even.")
     st.markdown(r"**Data Given:**")
     st.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
     st.markdown(r"&emsp;&emsp; $q(x): x \text{ is even}$")
@@ -39,7 +50,7 @@ with tab_3:
 
     st.divider()
 
-    st.markdown(r"##### **ii) There exists a positive integer that is even.**")
+    st.markdown(r"##### ii) There exists a positive integer that is even.")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"**Data Given:**")
     c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
@@ -55,7 +66,7 @@ with tab_3:
 
     st.divider()
 
-    st.markdown(r"##### **iii) If x is even, then x is not divisible by 3.**")
+    st.markdown(r"##### iii) If x is even, then x is not divisible by 3.")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"**Data Given:**")
     c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
@@ -71,7 +82,7 @@ with tab_3:
 
     st.divider()
 
-    st.markdown(r"##### **iv) No even integer is divisible by 7.**")
+    st.markdown(r"##### iv) No even integer is divisible by 7.")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"**Data Given:**")
     c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
@@ -94,7 +105,7 @@ with tab_3:
 
     st.divider()
 
-    st.markdown(r"##### **v) There exists even integer divisible by 3.**")
+    st.markdown(r"##### v) There exists even integer divisible by 3.")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"**Data Given:**")
     c1.markdown(r"&emsp;&emsp; Universe: All integers ($\mathbb{Z}$)")
@@ -110,13 +121,17 @@ with tab_3:
 
 with tab_8:
     st.markdown(r"### **Question 8**")
-    st.markdown(r"**For the following statements, the universe comprises all non-zero integers. Determine the truth value of each statement.**")
-    st.markdown(r"**a) $\exists x \exists y [xy = 1]$  b) $\exists x \forall y [xy = 1]$  c) $\forall x \exists y [xy = 1]$  d) $\exists x \exists y [(2x + y = 5) \land (x - 3y = -8)]$  e) $\exists x \exists y [(3x - y = 7) \land (2x + 4y = 3)]$**")
+    st.markdown(r"For the following statements, the universe comprises all non-zero integers. Determine the truth value of each statement.")
+    st.markdown(r"a) $\exists x \exists y [xy = 1]$  ")
+    st.markdown(r"b) $\exists x \forall y [xy = 1]$  ")
+    st.markdown(r"c) $\forall x \exists y [xy = 1]$  ")
+    st.markdown(r"d) $\exists x \exists y [(2x + y = 5) \land (x - 3y = -8)]$  ")
+    st.markdown(r"e) $\exists x \exists y [(3x - y = 7) \land (2x + 4y = 3)]$")
     st.markdown(r"**Universe:** All non-zero integers ($\mathbb{Z}^*$)")
 
     st.divider()
 
-    st.markdown(r"##### **a) $\exists x \exists y [xy = 1]$**")
+    st.markdown(r"##### a) $\exists x \exists y [xy = 1]$")
     st.markdown(r"Let $x = 1$, $y = 1$")
     st.markdown(r"&emsp;&emsp; $xy = 1(1)$")
     st.markdown(r"&emsp;&emsp; $1 = 1 \equiv \text{True}$")
@@ -124,7 +139,7 @@ with tab_8:
 
     st.divider()
 
-    st.markdown(r"##### **b) $\exists x \forall y [xy = 1]$**")
+    st.markdown(r"##### b) $\exists x \forall y [xy = 1]$")
     st.markdown(r"Assume such an $x$ exists. Let $y = 1$")
     st.markdown(r"&emsp;&emsp; $x(1) = 1 \implies x = 1$")
     st.markdown(r"Now test for $y = 4$")
@@ -134,7 +149,7 @@ with tab_8:
 
     st.divider()
 
-    st.markdown(r"##### **c) $\forall x \exists y [xy = 1]$**")
+    st.markdown(r"##### c) $\forall x \exists y [xy = 1]$")
     st.markdown(r"Let $x = 2$")
     st.markdown(r"&emsp;&emsp; $2y = 1 \implies y = 0.5$")
     st.markdown(r"Since $0.5$ is not an integer, no such y exists in our universe.")
@@ -142,7 +157,7 @@ with tab_8:
 
     st.divider()
 
-    st.markdown(r"##### **d) $\exists x \exists y [(2x + y = 5) \land (x - 3y = -8)]$**")
+    st.markdown(r"##### d) $\exists x \exists y [(2x + y = 5) \land (x - 3y = -8)]$")
     st.markdown(r"Solve the equations.")
     st.markdown(r"&emsp;&emsp; $2x + y = 5 \implies y = 5 - 2x$")
     st.markdown(r"&emsp;&emsp; $x - 3(5 - 2x) = -8$")
@@ -153,7 +168,7 @@ with tab_8:
 
     st.divider()
 
-    st.markdown(r"##### **e) $\exists x \exists y [(3x - y = 7) \land (2x + 4y = 3)]$**")
+    st.markdown(r"##### e) $\exists x \exists y [(3x - y = 7) \land (2x + 4y = 3)]$")
     st.markdown(r"Solve the equations.")
     st.markdown(r"&emsp;&emsp; $3x - y = 7 \implies y = 3x - 7$")
     st.markdown(r"&emsp;&emsp; $2x + 4(3x - 7) = 3$")
@@ -163,17 +178,21 @@ with tab_8:
 
 with tab_12:
     st.markdown(r"### **Question 12**")
-    st.markdown(r"**Consider the following open statements on the set of all real numbers as universe:**")
-    st.markdown(r"**$p(x) : x \ge 0$**")
-    st.markdown(r"**$q(x) : x^2 \ge 0$**")
-    st.markdown(r"**$r(x) : x^2 - 3x - 4 = 0$**")
-    st.markdown(r"**$s(x) : x^2 - 3 > 0$**")
-    st.markdown(r"**Then find the truth value of: 1. $\exists x [p(x) \land q(x)]$ 2. $\forall x [p(x) \rightarrow q(x)]$ 3. $\forall x [q(x) \rightarrow s(x)]$ 4. $\forall x [r(x) \lor s(x)]$**")
+    st.markdown(r"Consider the following open statements on the set of all real numbers as universe:")
+    st.markdown(r"p(x) : x $\ge$ 0")
+    st.markdown(r"q(x) : x$^2$ $\ge$ 0")
+    st.markdown(r"r(x) : x$^2$ - 3x - 4 = 0")
+    st.markdown(r"s(x) : x$^2$ - 3 > 0")
+    st.markdown(r"Then find the truth value of: ")
+    st.markdown(r"1. $\exists x [p(x) \land q(x)]$ ")
+    st.markdown(r"2. $\forall x [p(x) \rightarrow q(x)]$ ")
+    st.markdown(r"3. $\forall x [q(x) \rightarrow s(x)]$ ")
+    st.markdown(r"4. $\forall x [r(x) \lor s(x)]$")
     st.markdown(r"**Universe:** Set of all real numbers ($\mathbb{R}$)")
 
     st.divider()
 
-    st.markdown(r"##### **1. $\exists x [p(x) \land q(x)]$**")
+    st.markdown(r"##### 1. $\exists x [p(x) \land q(x)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 1$")
     c1.markdown(r"&emsp;&emsp; $p(1): 1 \ge 0 \equiv \text{T}$")
@@ -186,7 +205,7 @@ with tab_12:
 
     st.divider()
 
-    st.markdown(r"##### **2. $\forall x [p(x) \rightarrow q(x)]$**")
+    st.markdown(r"##### 2. $\forall x [p(x) \rightarrow q(x)]$")
     st.markdown(r"Let $x = c$ (any real number)")
     st.markdown(r"Case 1: $c \ge 0$")
     st.markdown(r"&emsp;&emsp; $p(c) \equiv \text{T}$")
@@ -200,7 +219,7 @@ with tab_12:
 
     st.divider()
 
-    st.markdown(r"##### **3. $\forall x [q(x) \rightarrow s(x)]$**")
+    st.markdown(r"##### 3. $\forall x [q(x) \rightarrow s(x)]$")
     st.markdown(r"Let $x = 1$")
     st.markdown(r"&emsp;&emsp; $q(1): 1^2 \ge 0 \equiv \text{T}$")
     st.markdown(r"&emsp;&emsp; $s(1): 1^2 - 3 > 0 \implies -2 > 0 \equiv \text{F}$")
@@ -209,7 +228,7 @@ with tab_12:
 
     st.divider()
 
-    st.markdown(r"##### **4. $\forall x [r(x) \lor s(x)]$**")
+    st.markdown(r"##### 4. $\forall x [r(x) \lor s(x)]$")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"Let $x = 0$")
     c1.markdown(r"&emsp;&emsp; $r(0): 0^2 - 3(0) - 4 = 0 \implies -4 = 0 \equiv \text{F}$")
