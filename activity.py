@@ -242,8 +242,6 @@ with tab_12:
     st.divider()
     
 
-    st.divider()
-
     st.markdown(r"##### **4. $\forall x [r(x) \lor s(x)]$**")
     c1, c2 = st.columns([2, 1])
     c1.markdown(r"**Data Given:**")
